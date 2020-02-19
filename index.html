@@ -6,64 +6,80 @@
   </head>
   <body>
 
-    <header>
+  <header>
     <nav>
-      <ol>
-        <li>Home</li>
-        <li>About</li>
-        <li>Projects</li>
-        <li>Contact</li>
-      </ol>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About Me</a></li>
+        <li><a href="">Projects</a></li>
+        <li><a href="">Contact Me</a></li>
+      </ul>
     </nav>
   </header>
 
-    <main>
+  <hr>
 
-      <section class="news">
+  <main>
+
+      <section class="About Me">
           <header>
-            <h2>Latest News!</h2>
+            <h2>About Me</h2>
           </header>
-        <article>
-          <p>This is the first article.</p>
-        </article>
-        <article>
-          <p>This is the second article.</p>
-        </article>
+      I'm currently a senior at the University of Kentucky working on my Bechelors of Science in Information Communication Technologies.<br>
+      I plan on graduating at the end of this spring semester and hopefully find a job around the start of the summer. I currently work<br>
+      part time as a valet at Tony's Steak and Seafood. I also umpire baseball games in my free time. When I graduate school on plan<br>
+      on looking for an entry level position in Cyber Security.
+      </section>
+      <br>
+      <img src="images/Headshot.png" alt="A picture of me Sam Scholl">
+      <figcaption>Senior Year Composite Photo</figcaption>
+      <p>If you'd like to know more about me more, check out my <a href="https://www.facebook.com/samscholl02">Facebook page!</a></p>
+
+      <section class="Contact Me">
+          <header>
+            <h2>Contact Me</h2>
+              <p>859-640-****<br>
+                samscholl02@gmail.com<br>
+                *** **** Ave, Lexington, KY 40503
       </section>
 
-      <p>Testing 12345</p>
+      <section class="Projects">
+        <h4>Check out the Project's Page to see what I've been working on</h4>
+        <p>Here's and example of a PHP Login page I recently worked on</p>
+        <code>
+              if (!empty($email)) $$ !empty($pass)) {<br>
+                require_once('includes/mysqli_connect.php');<br>
+                $q = "SELECT * FROM users WHERE email='$email' AND pass=SHA2('$pass', 512)";<br>
+                $result = @mysqli_query($dbc, $q);<br>
+                $row = mysqli_fetch_array($result, MYSQLI_ASSOC);<br>
+                if($row) {<br>
+                  session_start();<br>
+                  $_SESSION['id'] = $row['id'];<br>
+                  $_SESSION['first name'] = $row['first_name'];<br>
+                  $_SESSION['last name'] = $row['last name'];<br>
+                  $_SESSION['email'] = $row['email'];<br>
+                  header("Location:loggedin.php");<br>
 
-      <section class="resources">
-          <header>
-            <h2>Resources</h2>
-          </header>
-        <article>
-          <p>Our resources include ...</p>
-        </article>
+                  exit();<br>
+                }<br>
+              }<br>
+        </code>
       </section>
-
-    </main>
-
-    <h1>My main title</h1>
-    <h2>My top level</h2>
-    <h3>My subheading</h3>
-    <h4>My sub-subheading</h4>
-
-    <img src="images/Headshot.png" alt="A picture of me Sam Scholl">
+  </main>
 
     <aside>
-    <ul>
+    <ol type="I">
       <li>The first item</li>
       <li>The second item</li>
       <li>The third item</li>
-    </ul>
+    </ol>
     </aside>
 
-    <p>My name is Sam Scholl and I'm a student at the <a href="https://www.uky.edu/">Unviersity of Kentucky.</a></p>
+    <p>Check out the <a href="https://ci.uky.edu/sis/">School of Information Science</a></p>
 
     <footer>
-      <p>Copyright Sam Scholl, 2020</p>
+      <p>Copyright Sam Scholl, <time datetime="2020-02-18">February 2020</time></p>
     </footer>
-  </body>
 
+</body>
 </html>
