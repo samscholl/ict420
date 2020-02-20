@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width", initial-scale="1.0">
+		<title>Working with Image and Video embedding.</title>
+	</head>
+
+	<body>
+
+		<h1>Image Testing</h1>
+
+		<h2>Basic Images with title attributes.</h2>
+
+		<img src="images/redsstadium.jpg" alt="Cincinnati Reds Stadium"
+		title="Great American Ballpark">
+		<br>
+
+		<h2>Changing Photo Size Dimensions in HTML</h2>
+
+		<p>As you can see, the photo of the Red's stadium is massive and I'd like to use a smaller version for my webpage.</p>
+
+		<img src="images/redsstadium.jpg" alt="Cincinnati Reds Stadium"
+		title="Great American Ballpark" height="510" width="670">
+		<br>
+
+		<img src="images/redsstadium.jpg" alt="Cincinnati Reds Stadium"
+		title="Great American Ballpark" height="300">
+		<br>
+
+		<img src="images/joeyfull.png"
+		alt="Joey Votto"
+		srcset="images/joeyhalf.png 218w"
+		sizes="(max-width: 436px) 436px, 218px">
+		<br>
+
+		<figure>
+			<img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Cincinnati_Reds_Logo.svg"
+			alt="Cincinnati Reds Logo Provided by Wikipedia">
+			<figcaption>Cincinnati Reds 2020</figcaption>
+		</figure>
+
+ 	</body>
+ </html>
