@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Contact Form</title>
+	</head>
+
+	<body>
+
+		<header>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="">About Me</a></li>
+					<li><a href="">Projects</a></li>
+					<li><a href="contact.html">Contact Me</a></li>
+					<li><a href="images.html">Photos</a></li>
+					<li><a href="videos.html">Videos</a></li>
+					<li><a href="tables.html">Tables</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<hr>
+
+		<h1>Contact Me</h1>
+
+		<form action="scripts/action.php" method="post">
+        	<label for="name">Enter your name: </label>
+        	<input type="text" name="name" id="name" required>
+
+        	<label for="email">Enter your email address: </label>
+        	<input type="text" name="email" id="email" required>
+
+			<br>
+			<br>
+
+			<textarea name="questions" id="questions" rows="10" cols="80">Enter Questions Here:</textarea>
+
+			<br>
+
+        	<input type="submit" value="Submit">
+    	</form>
+
+
+	</body>
+</html>
